@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/portfolio.min.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="container container-flex">
+        <!-- logo and navigation-->
+        <nav class="nav container-flex">
+          <a class="logo" href="./index.html"
+            ><span class="logo_accent">Web</span>Studio</a
+          >
+
+          <ul class="nav__list list">
+            <li class="nav__item">
+              <a class="nav__link" href="./index.html">Студия</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link_current" href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- contacts -->
+        <ul class="contacts list">
+          <li class="contacts__item">
+            <a class="contacts__link" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon" width="16" height="12">
+                <use href="./images/symbol-defs.svg#envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:+380961111111"
+              ><svg class="contacts__icon" width="10" height="16">
+                <use href="./images/symbol-defs.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- main -->
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 class="visually-hidden">Портфолио</h1>
+          <!-- filter buttons -->
+          <ul class="filter__list list flex-cards">
+            <li class="filter__item">
+              <button class="button button_secondary active" type="button">
+                Все
+              </button>
+            </li>
+            <li class="filter__item">
+              <button class="button button_secondary" type="button">
+                Веб-сайты
+              </button>
+            </li>
+            <li class="filter__item">
+              <button class="button button_secondary" type="button">
+                Приложения
+              </button>
+            </li>
+            <li class="filter__item">
+              <button class="button button_secondary" type="button">
+                Дизайн
+              </button>
+            </li>
+            <li class="filter__item">
+              <button class="button button_secondary" type="button">
+                Маркетинг
+              </button>
+            </li>
+          </ul>
+
+          <!-- galery -->
+          <ul class="galery__list list flex-cards">
+            <li class="galery__item">
+              <a class="galery__link" href="">
+                <div class="galery__thumb">
+                  <img
+                    class="galery__img"
+                    src="./images/portfolio/img-technokryak.jpg"
+                    alt="Ноутбук с открытым веб-сайтом Технокряк"
+                    width="370"
+                  />
+                  <div class="galery__overlay overlay-galery">
+                    <p class="overlay-galery__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="galery__desc">
+                  <h2 class="galery__title">Технокряк</h2>
+                  <p class="galery__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="galery__item">
+              <a class="galery__link" href="">
+                <div class="galery__thumb">
+                  <img
+                    class="galery__img"
+                    src="./images/portfolio/img-poster-new-orlean.jpg"
+                    alt="Два баскетболиста из Нового Орлеана и Голден Стар борятся за мяч"
+                    width="370"
+                  />
+                  <div class="galery__overlay overlay-galery">
+                    <p class="overlay-galery__text">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Impedit eveniet molestias saepe eius laborum, autem,
+                      ducimus incidunt consequatur, voluptatem mollitia nisi?
+                    </p>
+                  </div>
+                </div>
+                <div class="galery__desc">
+                  <h2 class="galery__title">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="galery__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="galery__item">
+              <a class="galery__link" href="">
+                <div class="galery__thumb">
+                  <img
+                    class="galery__img"
+                    src="./images/portfolio/img-seafood.jpg"
+                    alt="Логотип ресторана Seafood на фоне рыбы"
+                    width="370"
+                  />
+                  <div class="galery__overlay overlay-galery">
+                    <p class="overlay-galery__text">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Dignissimos facere quaerat ratione nam aut voluptatibus
+                      maxime, magnam error recusandae ad! Quasi dignissimos
+                      harum possimus eius?
+                    </p>
+                  </div>
+                </div>
+                <div class="galery__desc">
+                  <h2 class="galery__title">Ресторан Seafood</h2>
+                  <p class="galery__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="galery__item">
+              <a class="galery__link" href="">
+                <div class="galery__thumb">
+                  <img
+                    class="galery__img"
+                    src="./images/portfolio/img-prime.jpg"
+                    alt="Черные накладные наушники"
+                    width="370"
+                  />
+                  <div class="galery__overlay overlay-galery">
+                    <p class="overlay-galery__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="galery__desc">
+                  <h2 class="galery__title">Проект Prime</h2>
+                  <p class="galery__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="galery__item">
+              <a class="galery__link" href="">
+                <div class="galery__thumb">
+                  <img
+                    class="galery__img"
+                    src="./images/portfolio/img-boxes.jpg"
+                    alt="Две коробки Boxes, белая и коричневая"
+                    width="370"
+                  />
+                  <div class="galery__overlay overlay-galery">
+                    <p class="overlay-galery__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="galery__desc">
+                  <h2 class="galery__title">Проект Boxes</h2>
+                  <p class="galery__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="galery__item">
+              <a class="galery__link" href="">
+                <div class="galery__thumb">
+                  <img
+                    class="galery__img"
+                    src="./images/portfolio/img-inspiration.jpg"
+                    alt="Моноблок с открым веб-сайтом Inspiration has no Borders"
+                    width="370"
+                  />
+                  <div class="galery__overlay overlay-galery">
+                    <p class="overlay-galery__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="galery__desc">
+                  <h2 class="galery__title">Inspiration has no Borders</h2>
+                  <p class="galery__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="galery__item">
+              <a class="galery__link" href="">
+                <div class="galery__thumb">
+                  <img
+                    class="galery__img"
+                    src="./images/portfolio/img-limited-edition.jpg"
+                    alt="Разворот журнала Limited Edition"
+                    width="370"
+                  />
+                  <div class="galery__overlay overlay-galery">
+                    <p class="overlay-galery__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="galery__desc">
+                  <h2 class="galery__title">Издание Limited Edition</h2>
+                  <p class="galery__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="galery__item">
+              <a class="galery__link" href="">
+                <div class="galery__thumb">
+                  <img
+                    class="galery__img"
+                    src="./images/portfolio/img-lab.jpg"
+                    alt="Белая бирка LAB EL TAG"
+                    width="370"
+                  />
+                  <div class="galery__overlay overlay-galery">
+                    <p class="overlay-galery__text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Mollitia asperiores optio dicta dolorem veritatis
+                      provident nemo illo, velit perspiciatis nobis id eos,
+                      repellat inventore ipsa.
+                    </p>
+                  </div>
+                </div>
+                <div class="galery__desc">
+                  <h2 class="galery__title">Проект LAB</h2>
+                  <p class="galery__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="galery__item">
+              <a class="galery__link" href="">
+                <div class="galery__thumb">
+                  <img
+                    class="galery__img"
+                    src="./images/portfolio/img-growing.jpg"
+                    alt="Человек работает за ноутбуком с открытым приложением Growing Business"
+                    width="370"
+                  />
+                  <div class="galery__overlay overlay-galery">
+                    <p class="overlay-galery__text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Asperiores vero, molestiae dolores doloribus pariatur iste
+                      atque quam tempore deleniti earum?
+                    </p>
+                  </div>
+                </div>
+                <div class="galery__desc">
+                  <h2 class="galery__title">Growing Business</h2>
+                  <p class="galery__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container container-flex container-footer">
+        <!-- logo-footer -->
+        <div class="address-wrapper">
+          <a class="logo footer__logo" href="/"
+            ><span class="logo_accent">Web</span>Studio</a
+          >
+
+          <!-- contact information -->
+          <address class="address">
+            <ul class="address__list list">
+              <li class="address__item">
+                <a
+                  class="address__link address__link_geo"
+                  href="https://goo.gl/maps/iMKgxrzqZL7RTVhf6"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="address__item">
+                <a
+                  class="address__link address__link_cont"
+                  href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="address__item">
+                <a
+                  class="address__link address__link_cont"
+                  href="tel:+380991111111"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <!-- join -->
+        <div class="join">
+          <b class="join__title">ПРИСОЕДИНЯЙТЕСЬ</b>
+          <ul class="socials footer__socials list">
+            <li class="socials__item">
+              <a class="socials__link socials__link_footer" href="#">
+                <svg class="socials__icon socials__icon_footer">
+                  <use href="./images/symbol-defs.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link_footer" href="#">
+                <svg class="socials__icon socials__icon_footer">
+                  <use href="./images/symbol-defs.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link_footer" href="#">
+                <svg class="socials__icon socials__icon_footer">
+                  <use href="./images/symbol-defs.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link_footer" href="#">
+                <svg class="socials__icon socials__icon_footer">
+                  <use href="./images/symbol-defs.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- subscribe -->
+        <form class="subscribe">
+          <b class="join__title subscribe-title">Подпишитесь на рассылку</b>
+          <label class="visually-hidden" for="subscribe_mail">E-mail</label>
+          <input
+            class="subscribe__input"
+            name="subscribe_mail"
+            id="subscribe_mail"
+            type="email"
+            required
+            placeholder="E-mail"
+          />
+          <button class="button button_primary subscribe-button" type="submit">
+            Подписаться
+            <svg class="subscribe-button__icon" width="24" height="24">
+              <use href="./images/symbol-defs.svg#plane"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+.logo {
+  text-decoration: none;
+  font-family: "Raleway", roboto, -apple-system, BlinkMacSystemFont, avenir next,
+    avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, noto, arial,
+    sans-serif;
+
+  @include font(700, 26px, 31px);
+  color: var(--primary-logo-color);
+}
+
+.footer__logo {
+  color: var(--main-white-color);
+}
+
+.logo_accent {
+  color: var(--accent-color);
+}
