@@ -1,10 +1,24 @@
 .header {
   @include for-phone-only {
     padding: 16px 0;
-    position: relative;
   }
 
   border-bottom: 1px solid var(--header-border);
+}
+
+.header__container {
+  position: relative;
+
+  @include for-tablet-up {
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+  }
+}
+
+.nav {
+  display: inline-flex;
+  align-items: center;
 }
 
 .nav__list {
@@ -12,97 +26,115 @@
 
   @include for-tablet-up {
     display: flex;
+    margin-left: 88px;
+    margin-right: 84px;
+  }
+
+  @include for-desktop-up {
     margin-left: 93px;
   }
 }
+//
+.nav__item:not(:last-child) {
+  margin-right: 50px;
+}
 
-// .nav__item:not(:last-child) {
-//   margin-right: 50px;
-// }
+.nav__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
-// .nav__link {
-//   display: block;
-//   padding-top: 32px;
-//   padding-bottom: 32px;
+  text-decoration: none;
+  @include font(500, 14px, 16px);
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
 
-//   text-decoration: none;
-//   @include font(500, 14px, 16px);
-//   letter-spacing: 0.02em;
-//   color: var(--secondary-text-color);
+  transition: color var(--timing-function);
 
-//   transition: color var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
 
-//   &:hover,
-//   &:focus {
-//     color: var(--accent-color);
-//   }
-// }
+.nav__link_current {
+  position: relative;
+  color: var(--accent-color);
 
-// .nav__link_current {
-//   position: relative;
-//   color: var(--accent-color);
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
 
-//   &::after {
-//     content: "";
-//     position: absolute;
-//     right: 0;
-//     bottom: -1px;
-//     width: 100%;
-//     height: 4px;
-
-//     background-color: var(--accent-color);
-//     border-radius: 2px;
-//   }
-// }
+    background-color: var(--accent-color);
+    border-radius: 2px;
+  }
+}
+//
 
 .contacts {
   display: none;
 
-  @include for-tablet-up {
+  @include for-tablet-only {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  @include for-desktop-up {
     display: flex;
     margin-left: auto;
   }
 }
 
-// .contacts__item:not(:last-child) {
-//   margin-right: 30px;
-// }
+.contacts__item:not(:last-child) {
+  @include for-desktop-up {
+    margin-right: 30px;
+  }
+}
 
-// .contacts__link {
-//   display: inline-flex;
-//   align-items: center;
+.contacts__link {
+  display: inline-flex;
+  align-items: center;
 
-//   text-decoration: none;
-//   @include font(500, 14px, 16px);
-//   letter-spacing: 0.02em;
-//   color: var(--primary-text-color);
+  text-decoration: none;
+  @include font(500, 12px, 14px);
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
 
-//   transition: color var(--timing-function);
+  transition: color var(--timing-function);
 
-//   &:hover,
-//   &:focus {
-//     color: var(--accent-color);
-//   }
-// }
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 
-// .contacts__icon {
-//   margin-right: 10px;
+  @include for-desktop-up {
+    @include font(500, 14px, 16px);
+  }
+}
 
-//   fill: #757575;
+.contacts__icon {
+  margin-right: 10px;
 
-//   transition: fill var(--timing-function);
+  fill: #757575;
 
-//   .contacts__link:hover &,
-//   .contacts__link:focus & {
-//     fill: #2196f3;
-//   }
-// }
+  transition: fill var(--timing-function);
+
+  .contacts__link:hover &,
+  .contacts__link:focus & {
+    fill: #2196f3;
+  }
+}
 
 // =======burger-button======
 .line {
   position: absolute;
   right: 22px;
-  z-index: 100;
+  z-index: 10;
 
   display: block;
   width: 24px;
@@ -116,21 +148,21 @@
 }
 
 .line.top {
-  top: 20px;
+  top: 4px;
 
   transform-origin: right;
   transition: transform var(--timing-function);
 }
 
 .line.center {
-  top: 28.5px;
+  top: 12.5px;
 
   transform-origin: center;
   transition: transform var(--timing-function);
 }
 
 .line.bottom {
-  top: 37px;
+  top: 21px;
 
   transform-origin: right;
   transition: transform var(--timing-function);

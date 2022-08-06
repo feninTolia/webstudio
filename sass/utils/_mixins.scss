@@ -1,7 +1,7 @@
 @mixin font($fw, $fs, $lh) {
   font-weight: $fw;
   font-size: $fs;
-  line-height: $lh / $fs;
+  line-height: ($lh / $fs);
 }
 
 // ========= BREAKPOINTS =========
@@ -32,6 +32,12 @@
 
 @mixin for-tablet-up {
   @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin for-phone-and-tablet {
+  @media screen and (max-width: 1199px) {
     @content;
   }
 }

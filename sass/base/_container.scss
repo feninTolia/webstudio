@@ -18,10 +18,7 @@
 
   @include for-desktop-up {
     width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
-
-// .container-flex {
-//   display: flex;
-//   align-items: center;
-// }

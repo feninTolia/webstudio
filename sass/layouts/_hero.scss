@@ -1,32 +1,50 @@
-// .hero {
-//   max-width: 1920px;
-//   height: 600px;
-//   margin-left: auto;
-//   margin-right: auto;
-//   padding-top: 200px;
-//   padding-bottom: 200px;
+.hero {
+  height: 400px;
 
-//   text-align: center;
-//   background-color: var(--primary-background-color);
-//   background-image: linear-gradient(
-//       rgba(47, 48, 58, 0.4),
-//       rgba(47, 48, 58, 0.4)
-//     ),
-//     url(../images/hero.jpg);
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: cover;
-// }
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
 
-// .hero__title {
-//   width: 696px;
-//   margin-left: auto;
-//   margin-right: auto;
-//   margin-bottom: 30px;
+  text-align: center;
+  background-color: var(--primary-background-color);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
-//   @include font(900, 44px, 60px);
-//   text-align: center;
-//   letter-spacing: 0.06em;
-//   text-transform: uppercase;
-//   color: var(--main-white-color);
-// }
+  @include for-desktop-up {
+    max-width: 1920px;
+    height: 600px;
+
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
+.hero__title {
+  width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+
+  @include font(900, 26px, 42px);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--main-white-color);
+
+  @media screen and (max-width: 386px) {
+    margin-top: -20px;
+    width: auto;
+  }
+
+  @include for-desktop-up {
+    @include font(900, 44px, 60px);
+    width: 700px;
+  }
+}
