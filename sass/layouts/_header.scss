@@ -1,86 +1,165 @@
 .header {
+  @include for-phone-only {
+    padding: 16px 0;
+    position: relative;
+  }
+
   border-bottom: 1px solid var(--header-border);
 }
 
 .nav__list {
-  display: flex;
-  margin-left: 93px;
-}
+  display: none;
 
-.nav__item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.nav__link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  text-decoration: none;
-  @include font(500, 14px, 16px);
-  letter-spacing: 0.02em;
-  color: var(--secondary-text-color);
-
-  transition: color var(--timing-function);
-
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
+  @include for-tablet-up {
+    display: flex;
+    margin-left: 93px;
   }
 }
 
-.nav__link_current {
-  position: relative;
-  color: var(--accent-color);
+// .nav__item:not(:last-child) {
+//   margin-right: 50px;
+// }
 
-  &::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: -1px;
-    width: 100%;
-    height: 4px;
+// .nav__link {
+//   display: block;
+//   padding-top: 32px;
+//   padding-bottom: 32px;
 
-    background-color: var(--accent-color);
-    border-radius: 2px;
-  }
-}
+//   text-decoration: none;
+//   @include font(500, 14px, 16px);
+//   letter-spacing: 0.02em;
+//   color: var(--secondary-text-color);
+
+//   transition: color var(--timing-function);
+
+//   &:hover,
+//   &:focus {
+//     color: var(--accent-color);
+//   }
+// }
+
+// .nav__link_current {
+//   position: relative;
+//   color: var(--accent-color);
+
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     right: 0;
+//     bottom: -1px;
+//     width: 100%;
+//     height: 4px;
+
+//     background-color: var(--accent-color);
+//     border-radius: 2px;
+//   }
+// }
 
 .contacts {
-  display: flex;
-  margin-left: auto;
-}
+  display: none;
 
-.contacts__item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.contacts__link {
-  display: inline-flex;
-  align-items: center;
-
-  text-decoration: none;
-  @include font(500, 14px, 16px);
-  letter-spacing: 0.02em;
-  color: var(--primary-text-color);
-
-  transition: color var(--timing-function);
-
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
+  @include for-tablet-up {
+    display: flex;
+    margin-left: auto;
   }
 }
 
-.contacts__icon {
-  margin-right: 10px;
+// .contacts__item:not(:last-child) {
+//   margin-right: 30px;
+// }
 
-  fill: #757575;
+// .contacts__link {
+//   display: inline-flex;
+//   align-items: center;
 
-  transition: fill var(--timing-function);
+//   text-decoration: none;
+//   @include font(500, 14px, 16px);
+//   letter-spacing: 0.02em;
+//   color: var(--primary-text-color);
 
-  .contacts__link:hover &,
-  .contacts__link:focus & {
-    fill: #2196f3;
+//   transition: color var(--timing-function);
+
+//   &:hover,
+//   &:focus {
+//     color: var(--accent-color);
+//   }
+// }
+
+// .contacts__icon {
+//   margin-right: 10px;
+
+//   fill: #757575;
+
+//   transition: fill var(--timing-function);
+
+//   .contacts__link:hover &,
+//   .contacts__link:focus & {
+//     fill: #2196f3;
+//   }
+// }
+
+// =======burger-button======
+.line {
+  position: absolute;
+  right: 22px;
+  z-index: 100;
+
+  display: block;
+  width: 24px;
+  height: 3px;
+  background-color: black;
+  cursor: pointer;
+
+  @include for-tablet-up {
+    display: none;
   }
+}
+
+.line.top {
+  top: 20px;
+
+  transform-origin: right;
+  transition: transform var(--timing-function);
+}
+
+.line.center {
+  top: 28.5px;
+
+  transform-origin: center;
+  transition: transform var(--timing-function);
+}
+
+.line.bottom {
+  top: 37px;
+
+  transform-origin: right;
+  transition: transform var(--timing-function);
+}
+
+input:checked + label .line.bottom {
+  transform: rotate(45deg);
+}
+
+input:checked + label .line.center {
+  transform: scale(0);
+}
+
+input:checked + label .line.top {
+  transform: rotate(-45deg);
+}
+// ======= /burger-button======
+
+.burger-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+}
+
+input:checked + label .burger-menu {
+  display: block;
 }

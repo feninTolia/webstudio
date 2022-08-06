@@ -1,10 +1,27 @@
 .container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+  @include for-phone-responsive {
+    min-width: 300px;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  @include for-phone-up {
+    width: 480px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  @include for-tablet-up {
+    width: 768px;
+  }
+
+  @include for-desktop-up {
+    width: 1200px;
+  }
 }
 
-.container-flex {
-  display: flex;
-  align-items: center;
-}
+// .container-flex {
+//   display: flex;
+//   align-items: center;
+// }

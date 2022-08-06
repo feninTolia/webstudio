@@ -3,9 +3,12 @@
   font-family: "Raleway", roboto, -apple-system, BlinkMacSystemFont, avenir next,
     avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, noto, arial,
     sans-serif;
-
-  @include font(700, 26px, 31px);
+  @include font(700, 24px, 28px);
   color: var(--primary-logo-color);
+
+  @include for-desktop-up {
+    @include font(700, 26px, 31px);
+  }
 }
 
 .footer__logo {
