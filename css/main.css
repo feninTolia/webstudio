@@ -585,10 +585,22 @@ ul {
   fill: #2196f3;
 }
 
-.line {
+.burger-menu-button {
   position: absolute;
   right: 22px;
+  top: 4px;
   z-index: 1000;
+  display: inline-block;
+  width: 24px;
+  height: 26px;
+}
+.burger-menu-button:hover {
+  cursor: pointer;
+}
+
+.line {
+  position: absolute;
+  z-index: 900;
   display: block;
   width: 24px;
   height: 3px;
@@ -600,21 +612,24 @@ ul {
     display: none;
   }
 }
+.burger-menu-button:hover .line {
+  background-color: var(--accent-color);
+}
 
 .line.top {
-  top: 4px;
+  top: 0px;
   transform-origin: right;
   transition: transform var(--timing-function);
 }
 
 .line.center {
-  top: 12.5px;
+  top: 8.5px;
   transform-origin: center;
   transition: transform var(--timing-function);
 }
 
 .line.bottom {
-  top: 21px;
+  top: 17px;
   transform-origin: right;
   transition: transform var(--timing-function);
 }
@@ -723,10 +738,15 @@ input:checked + label .burger-menu {
   padding-bottom: 118px;
   text-align: center;
   background-color: var(--primary-background-color);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/hero@2x.jpg);
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero {

@@ -62,13 +62,15 @@
           </li>
         </ul>
 
+        <!-- ========Burger Menu=========== -->
         <input class="visually-hidden" type="checkbox" id="checkbox" />
         <label class="burger" for="checkbox">
-          <span class="line top"> </span>
-          <span class="line center"> </span>
-          <span class="line bottom"> </span>
+          <div class="burger-menu-button">
+            <span class="line top"> </span>
+            <span class="line center"> </span>
+            <span class="line bottom"> </span>
+          </div>
 
-          <!-- ========Burger Menu=========== -->
           <div class="burger-menu">
             <nav class="burger-nav">
               <ul class="burger-nav__list list">
@@ -162,16 +164,67 @@
             </li>
           </ul>
 
-          <!-- galery -->
+          <!-- ================ GALERY =====================-->
+
           <ul class="galery__list list flex-cards">
-            <li class="galery__item">
+            <li class="galery__item galery__item_grown">
               <a class="galery__link" href="">
                 <div class="galery__thumb">
-                  <img
-                    class="galery__img"
-                    src="./images/portfolio/img-technokryak.jpg"
-                    alt="Ноутбук с открытым веб-сайтом Технокряк"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/tehno-desktop.webp    1x,
+                        ./images/portfolio/tehno-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tehno-desktop.jpg    1x,
+                        ./images/portfolio/tehno-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/tehno-tablet.webp    1x,
+                        ./images/portfolio/tehno-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tehno-tablet.jpg    1x,
+                        ./images/portfolio/tehno-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/tehno-mobile.webp    1x,
+                        ./images/portfolio/tehno-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tehno-mobile.jpg    1x,
+                        ./images/portfolio/tehno-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      class="galery__img"
+                      src="./images/portfolio/tehno-mobile.jpg"
+                      alt="Ноутбук с открытым веб-сайтом Технокряк"
+                    />
+                  </picture>
                   <div class="galery__overlay overlay-galery">
                     <p class="overlay-galery__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -187,14 +240,64 @@
                 </div>
               </a>
             </li>
+
             <li class="galery__item">
               <a class="galery__link" href="">
                 <div class="galery__thumb">
-                  <img
-                    class="galery__img"
-                    src="./images/portfolio/img-poster-new-orlean.jpg"
-                    alt="Два баскетболиста из Нового Орлеана и Голден Стар борятся за мяч"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/poster-desktop.webp    1x,
+                        ./images/portfolio/poster-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/poster-desktop.jpg    1x,
+                        ./images/portfolio/poster-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/poster-tablet.webp    1x,
+                        ./images/portfolio/poster-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/poster-tablet.jpg    1x,
+                        ./images/portfolio/poster-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/poster-mobile.webp    1x,
+                        ./images/portfolio/poster-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/poster-mobile.jpg    1x,
+                        ./images/portfolio/poster-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="galery__img"
+                      src="./images/portfolio/poster-mobile.jpg"
+                      alt="Два баскетболиста из Нового Орлеана и Голден Стар борятся за мяч"
+                    />
+                  </picture>
                   <div class="galery__overlay overlay-galery">
                     <p class="overlay-galery__text">
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -211,14 +314,64 @@
                 </div>
               </a>
             </li>
+
             <li class="galery__item">
               <a class="galery__link" href="">
                 <div class="galery__thumb">
-                  <img
-                    class="galery__img"
-                    src="./images/portfolio/img-seafood.jpg"
-                    alt="Логотип ресторана Seafood на фоне рыбы"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/seafood-desktop.webp    1x,
+                        ./images/portfolio/seafood-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/seafood-desktop.jpg    1x,
+                        ./images/portfolio/seafood-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/seafood-tablet.webp    1x,
+                        ./images/portfolio/seafood-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/seafood-tablet.jpg    1x,
+                        ./images/portfolio/seafood-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/seafood-mobile.webp    1x,
+                        ./images/portfolio/seafood-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/seafood-mobile.jpg    1x,
+                        ./images/portfolio/seafood-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="galery__img"
+                      src="./images/portfolio/seafood-mobile.jpg"
+                      alt="Логотип ресторана Seafood на фоне рыбы"
+                    />
+                  </picture>
                   <div class="galery__overlay overlay-galery">
                     <p class="overlay-galery__text">
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -234,14 +387,64 @@
                 </div>
               </a>
             </li>
+
             <li class="galery__item">
               <a class="galery__link" href="">
                 <div class="galery__thumb">
-                  <img
-                    class="galery__img"
-                    src="./images/portfolio/img-prime.jpg"
-                    alt="Черные накладные наушники"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/prime-desktop.webp    1x,
+                        ./images/portfolio/prime-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/prime-desktop.jpg    1x,
+                        ./images/portfolio/prime-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/prime-tablet.webp    1x,
+                        ./images/portfolio/prime-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/prime-tablet.jpg    1x,
+                        ./images/portfolio/prime-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/prime-mobile.webp    1x,
+                        ./images/portfolio/prime-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/prime-mobile.jpg    1x,
+                        ./images/portfolio/prime-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="galery__img"
+                      src="./images/portfolio/prime-mobile.jpg"
+                      alt="Черные накладные наушники"
+                    />
+                  </picture>
                   <div class="galery__overlay overlay-galery">
                     <p class="overlay-galery__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -257,14 +460,64 @@
                 </div>
               </a>
             </li>
+
             <li class="galery__item">
               <a class="galery__link" href="">
                 <div class="galery__thumb">
-                  <img
-                    class="galery__img"
-                    src="./images/portfolio/img-boxes.jpg"
-                    alt="Две коробки Boxes, белая и коричневая"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/boxes-desktop.webp    1x,
+                        ./images/portfolio/boxes-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/boxes-desktop.jpg    1x,
+                        ./images/portfolio/boxes-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/boxes-tablet.webp    1x,
+                        ./images/portfolio/boxes-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/boxes-tablet.jpg    1x,
+                        ./images/portfolio/boxes-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/boxes-mobile.webp    1x,
+                        ./images/portfolio/boxes-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/boxes-mobile.jpg    1x,
+                        ./images/portfolio/boxes-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="galery__img"
+                      src="./images/portfolio/boxes-mobile.jpg"
+                      alt="Две коробки Boxes, белая и коричневая"
+                    />
+                  </picture>
                   <div class="galery__overlay overlay-galery">
                     <p class="overlay-galery__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -280,14 +533,64 @@
                 </div>
               </a>
             </li>
+
             <li class="galery__item">
               <a class="galery__link" href="">
                 <div class="galery__thumb">
-                  <img
-                    class="galery__img"
-                    src="./images/portfolio/img-inspiration.jpg"
-                    alt="Моноблок с открым веб-сайтом Inspiration has no Borders"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/inspiration-desktop.webp    1x,
+                        ./images/portfolio/inspiration-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/inspiration-desktop.jpg    1x,
+                        ./images/portfolio/inspiration-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/inspiration-tablet.webp    1x,
+                        ./images/portfolio/inspiration-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/inspiration-tablet.jpg    1x,
+                        ./images/portfolio/inspiration-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/inspiration-mobile.webp    1x,
+                        ./images/portfolio/inspiration-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/inspiration-mobile.jpg    1x,
+                        ./images/portfolio/inspiration-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="galery__img"
+                      src="./images/portfolio/inspiration-mobile.jpg"
+                      alt="Моноблок с открым веб-сайтом Inspiration has no Borders"
+                    />
+                  </picture>
                   <div class="galery__overlay overlay-galery">
                     <p class="overlay-galery__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -303,14 +606,64 @@
                 </div>
               </a>
             </li>
+
             <li class="galery__item">
               <a class="galery__link" href="">
                 <div class="galery__thumb">
-                  <img
-                    class="galery__img"
-                    src="./images/portfolio/img-limited-edition.jpg"
-                    alt="Разворот журнала Limited Edition"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/limited-desktop.webp    1x,
+                        ./images/portfolio/limited-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/limited-desktop.jpg    1x,
+                        ./images/portfolio/limited-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/limited-tablet.webp    1x,
+                        ./images/portfolio/limited-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/limited-tablet.jpg    1x,
+                        ./images/portfolio/limited-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/limited-mobile.webp    1x,
+                        ./images/portfolio/limited-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/limited-mobile.jpg    1x,
+                        ./images/portfolio/limited-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="galery__img"
+                      src="./images/portfolio/limited-mobile.jpg"
+                      alt="Разворот журнала Limited Edition"
+                    />
+                  </picture>
                   <div class="galery__overlay overlay-galery">
                     <p class="overlay-galery__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -326,14 +679,64 @@
                 </div>
               </a>
             </li>
+
             <li class="galery__item">
               <a class="galery__link" href="">
                 <div class="galery__thumb">
-                  <img
-                    class="galery__img"
-                    src="./images/portfolio/img-lab.jpg"
-                    alt="Белая бирка LAB EL TAG"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/lab-desktop.webp    1x,
+                        ./images/portfolio/lab-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/lab-desktop.jpg    1x,
+                        ./images/portfolio/lab-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/lab-tablet.webp    1x,
+                        ./images/portfolio/lab-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/lab-tablet.jpg    1x,
+                        ./images/portfolio/lab-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/lab-mobile.webp    1x,
+                        ./images/portfolio/lab-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/lab-mobile.jpg    1x,
+                        ./images/portfolio/lab-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="galery__img"
+                      src="./images/portfolio/lab-mobile.jpg"
+                      alt="Белая бирка LAB"
+                    />
+                  </picture>
                   <div class="galery__overlay overlay-galery">
                     <p class="overlay-galery__text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -349,14 +752,64 @@
                 </div>
               </a>
             </li>
+
             <li class="galery__item">
               <a class="galery__link" href="">
                 <div class="galery__thumb">
-                  <img
-                    class="galery__img"
-                    src="./images/portfolio/img-growing.jpg"
-                    alt="Человек работает за ноутбуком с открытым приложением Growing Business"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/growing-desktop.webp    1x,
+                        ./images/portfolio/growing-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/growing-desktop.jpg    1x,
+                        ./images/portfolio/growing-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/growing-tablet.webp    1x,
+                        ./images/portfolio/growing-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/growing-tablet.jpg    1x,
+                        ./images/portfolio/growing-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/growing-mobile.webp    1x,
+                        ./images/portfolio/growing-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/growing-mobile.jpg    1x,
+                        ./images/portfolio/growing-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="galery__img"
+                      src="./images/portfolio/growing-mobile.jpg"
+                      alt="Человек работает за ноутбуком с открытым приложением Growing Business"
+                    />
+                  </picture>
                   <div class="galery__overlay overlay-galery">
                     <p class="overlay-galery__text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.

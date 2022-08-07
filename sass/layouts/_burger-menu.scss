@@ -1,8 +1,24 @@
 // =======burger-button======
-.line {
+
+.burger-menu-button {
   position: absolute;
   right: 22px;
+  top: 4px;
   z-index: 1000;
+
+  display: inline-block;
+  width: 24px;
+  height: 26px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.line {
+  position: absolute;
+  // right: 22px;
+  z-index: 900;
 
   display: block;
   width: 24px;
@@ -13,24 +29,28 @@
   @include for-tablet-up {
     display: none;
   }
+
+  .burger-menu-button:hover & {
+    background-color: var(--accent-color);
+  }
 }
 
 .line.top {
-  top: 4px;
+  top: 0px;
 
   transform-origin: right;
   transition: transform var(--timing-function);
 }
 
 .line.center {
-  top: 12.5px;
+  top: 8.5px;
 
   transform-origin: center;
   transition: transform var(--timing-function);
 }
 
 .line.bottom {
-  top: 21px;
+  top: 17px;
 
   transform-origin: right;
   transition: transform var(--timing-function);

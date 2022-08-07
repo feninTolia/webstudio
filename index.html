@@ -63,13 +63,15 @@
           </li>
         </ul>
 
+        <!-- ========Burger Menu=========== -->
         <input class="visually-hidden" type="checkbox" id="checkbox" />
         <label class="burger" for="checkbox">
-          <span class="line top"> </span>
-          <span class="line center"> </span>
-          <span class="line bottom"> </span>
+          <div class="burger-menu-button">
+            <span class="line top"> </span>
+            <span class="line center"> </span>
+            <span class="line bottom"> </span>
+          </div>
 
-          <!-- ========Burger Menu=========== -->
           <div class="burger-menu">
             <nav class="burger-nav">
               <ul class="burger-nav__list list">
@@ -206,34 +208,88 @@
           <ul class="products__list list flex-cards">
             <li class="products__item">
               <div class="products__thumb">
-                <img
-                  class="products__img"
-                  src="./images/img-desktop-apps.jpg"
-                  alt="На клавиатуре печатают исходный код и смотрят его на десктопе и планшете"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/products/desk-app-desktop.webp    1x,
+                      ./images/products/desk-app-desktop@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/products/desk-app-desktop.jpg    1x,
+                      ./images/products/desk-app-desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="products__img"
+                    src="./images/products/desk-app-desktop.jpg"
+                    alt="На клавиатуре печатают исходный код и смотрят его на десктопе и планшете"
+                    width="370"
+                  />
+                </picture>
+
                 <h3 class="products__description">Десктопные приложения</h3>
               </div>
             </li>
             <li>
               <div class="products__thumb">
-                <img
-                  class="products__img"
-                  src="./images/img-mobile-apps.jpg"
-                  alt="Человек смотрит на телефон и ноутбук с макетами"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/products/mob-app-desktop.webp    1x,
+                      ./images/products/mob-app-desktop@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/products/mob-app-desktop.jpg    1x,
+                      ./images/products/mob-app-desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="products__img"
+                    src="./images/products/mob-app-desktop.jpg"
+                    alt="Человек смотрит на телефон и ноутбук с макетами"
+                    width="370"
+                  />
+                </picture>
+
                 <h3 class="products__description">Мобильные приложения</h3>
               </div>
             </li>
             <li>
               <div class="products__thumb">
-                <img
-                  class="products__img"
-                  src="./images/img-design-solutions.jpg"
-                  alt="Человек держит планшет с селектором цветов"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/products/design-desktop.webp    1x,
+                      ./images/products/design-desktop@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/products/design-desktop.jpg    1x,
+                      ./images/products/design-desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="products__img"
+                    src="./images/products/design-desktop.jpg"
+                    alt="Человек держит планшет с селектором цветов"
+                    width="370"
+                  />
+                </picture>
+
                 <h3 class="products__description">Дизайнерские решения</h3>
               </div>
             </li>
@@ -247,11 +303,61 @@
           <h2 class="team__title section-title">Наша команда</h2>
           <ul class="team__list list">
             <li class="team__item item-team">
-              <img
-                class="item-team__img"
-                src="./images/img-Demjanenko.jpg"
-                alt="Портретное фото Игоря Демьяненко"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/igor-desktop.webp    1x,
+                    ./images/team/igor-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/igor-desktop.jpg    1x,
+                    ./images/team/igor-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/igor-tablet.webp    1x,
+                    ./images/team/igor-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/igor-tablet.jpg    1x,
+                    ./images/team/igor-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/igor-mobile.webp    1x,
+                    ./images/team/igor-mobile@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/igor-mobile.jpg    1x,
+                    ./images/team/igor-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  class="item-team__img"
+                  src="./images/team/igor-mobile.jpg"
+                  alt="Портретное фото Игоря Демьяненко"
+                />
+              </picture>
               <h3 class="item-team__title">Игорь Демьяненко</h3>
               <p class="item-team__text">Product Designer</p>
               <ul class="socials list">
@@ -285,12 +391,63 @@
                 </li>
               </ul>
             </li>
+
             <li class="team__item item-team">
-              <img
-                class="item-team__img"
-                src="./images/img-Repina.jpg"
-                alt="Портретное фото Ольги Репиной"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/olga-desktop.webp    1x,
+                    ./images/team/olga-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/olga-desktop.jpg    1x,
+                    ./images/team/olga-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/olga-tablet.webp    1x,
+                    ./images/team/olga-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/olga-tablet.jpg    1x,
+                    ./images/team/olga-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/olga-mobile.webp    1x,
+                    ./images/team/olga-mobile@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/olga-mobile.jpg    1x,
+                    ./images/team/olga-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  class="item-team__img"
+                  src="./images/team/olga-mobile.jpg"
+                  alt="Портретное фото Ольги Репиной"
+                />
+              </picture>
               <h3 class="item-team__title">Ольга Репина</h3>
               <p class="item-team__text">Frontend Developer</p>
               <ul class="socials list">
@@ -324,12 +481,62 @@
                 </li>
               </ul>
             </li>
+
             <li class="team__item item-team">
-              <img
-                class="item-team__img"
-                src="./images/img-Tarasov.jpg"
-                alt="Портретное фото Николая Тарасова"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/nikolay-desktop.webp    1x,
+                    ./images/team/nikolay-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/nikolay-desktop.jpg    1x,
+                    ./images/team/nikolay-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/nikolay-tablet.webp    1x,
+                    ./images/team/nikolay-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/nikolay-tablet.jpg    1x,
+                    ./images/team/nikolay-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/nikolay-mobile.webp    1x,
+                    ./images/team/nikolay-mobile@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/nikolay-mobile.jpg    1x,
+                    ./images/team/nikolay-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="item-team__img"
+                  src="./images/team/nikolay-mobile.jpg"
+                  alt="Портретное фото Николая Тарасова"
+                />
+              </picture>
               <h3 class="item-team__title">Николай Тарасов</h3>
               <p class="item-team__text">Marketing</p>
               <ul class="socials list">
@@ -363,12 +570,63 @@
                 </li>
               </ul>
             </li>
+
             <li class="team__item item-team">
-              <img
-                class="item-team__img"
-                src="./images/img-Ermakov.jpg"
-                alt="Портретное фото Михаила Ермакова"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/mikhail-desktop.webp    1x,
+                    ./images/team/mikhail-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/mikhail-desktop.jpg    1x,
+                    ./images/team/mikhail-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/mikhail-tablet.webp    1x,
+                    ./images/team/mikhail-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/mikhail-tablet.jpg    1x,
+                    ./images/team/mikhail-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/mikhail-mobile.webp    1x,
+                    ./images/team/mikhail-mobile@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/mikhail-mobile.jpg    1x,
+                    ./images/team/mikhail-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  class="item-team__img"
+                  src="./images/team/mikhail-mobile.jpg"
+                  alt="Портретное фото Михаила Ермакова"
+                />
+              </picture>
               <h3 class="item-team__title">Михаил Ермаков</h3>
               <p class="item-team__text">UI Designer</p>
               <ul class="socials list">
@@ -594,8 +852,8 @@
               name="tel"
               id="tel"
               required
-              pattern="^[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-              title="xxx-xxx-xx-xx"
+              pattern="^[0-9]{10}"
+              title="0xxxxxxxxx"
             />
             <svg class="callback-form__icon" width="18" height="18">
               <use href="./images/symbol-defs.svg#phone"></use>
