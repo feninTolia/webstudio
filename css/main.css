@@ -36,7 +36,8 @@ body {
 p,
 h1,
 h2,
-h3 {
+h3,
+ul {
   margin: 0;
   padding: 0;
   border: 0;
@@ -47,6 +48,10 @@ h3 {
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
+}
+
+.link {
+  text-decoration: none;
 }
 
 @media screen and (max-width: 479px) {
@@ -109,7 +114,7 @@ h3 {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 100;
+  z-index: 9999;
   overflow-y: scroll;
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.4);
@@ -583,7 +588,7 @@ h3 {
 .line {
   position: absolute;
   right: 22px;
-  z-index: 10;
+  z-index: 1000;
   display: block;
   width: 24px;
   height: 3px;
@@ -630,14 +635,84 @@ input:checked + label .line.top {
   position: fixed;
   top: 0;
   left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+  padding: 48px 40px;
   display: none;
-  width: 100vw;
-  height: 100vh;
   background-color: #fff;
 }
 
 input:checked + label .burger-menu {
   display: block;
+}
+
+.burger-nav__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.burger-nav__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  color: var(--secondary-text-color);
+}
+
+.burger-nav__link_current {
+  color: var(--accent-color);
+}
+
+.burger-contacts {
+  position: absolute;
+  bottom: 134px;
+  left: 40px;
+}
+
+.burger-contacts__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.burger-contacts__link_phone {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.1764705882;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.burger-contacts__link_mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.burger-socials {
+  position: absolute;
+  bottom: 48px;
+  left: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  margin-top: 64px;
+}
+
+.burger-socials__item {
+  position: relative;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+
+.burger-socials__item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.burger-socials__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2222222222;
+  color: var(--accent-color);
 }
 
 .hero {

@@ -1,0 +1,129 @@
+// =======burger-button======
+.line {
+  position: absolute;
+  right: 22px;
+  z-index: 1000;
+
+  display: block;
+  width: 24px;
+  height: 3px;
+  background-color: black;
+  cursor: pointer;
+
+  @include for-tablet-up {
+    display: none;
+  }
+}
+
+.line.top {
+  top: 4px;
+
+  transform-origin: right;
+  transition: transform var(--timing-function);
+}
+
+.line.center {
+  top: 12.5px;
+
+  transform-origin: center;
+  transition: transform var(--timing-function);
+}
+
+.line.bottom {
+  top: 21px;
+
+  transform-origin: right;
+  transition: transform var(--timing-function);
+}
+
+input:checked + label .line.bottom {
+  transform: rotate(45deg);
+}
+
+input:checked + label .line.center {
+  transform: scale(0);
+}
+
+input:checked + label .line.top {
+  transform: rotate(-45deg);
+}
+// ======= /burger-button======
+
+.burger-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+
+  padding: 48px 40px;
+
+  display: none;
+  background-color: #fff;
+}
+
+input:checked + label .burger-menu {
+  display: block;
+}
+
+.burger-nav__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.burger-nav__link {
+  @include font(500, 40px, 47px);
+  color: var(--secondary-text-color);
+}
+
+.burger-nav__link_current {
+  color: var(--accent-color);
+}
+
+.burger-contacts {
+  position: absolute;
+  bottom: 134px;
+  left: 40px;
+}
+
+.burger-contacts__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.burger-contacts__link_phone {
+  @include font(500, 34px, 40px);
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.burger-contacts__link_mail {
+  @include font(500, 24px, 28px);
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.burger-socials {
+  position: absolute;
+  bottom: 48px;
+  left: 40px;
+
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  margin-top: 64px;
+}
+
+.burger-socials__item {
+  position: relative;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+
+.burger-socials__item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.burger-socials__link {
+  @include font(500, 18px, 22px);
+  color: var(--accent-color);
+}

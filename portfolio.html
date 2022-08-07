@@ -22,7 +22,7 @@
     <header class="header">
       <div class="container header__container container-flex">
         <!-- logo and navigation-->
-        <nav class="nav container-flex">
+        <nav class="nav">
           <a class="logo" href="./index.html"
             ><span class="logo_accent">Web</span>Studio</a
           >
@@ -67,7 +67,63 @@
           <span class="line top"> </span>
           <span class="line center"> </span>
           <span class="line bottom"> </span>
-          <div class="burger-menu"></div>
+
+          <!-- ========Burger Menu=========== -->
+          <div class="burger-menu">
+            <nav class="burger-nav">
+              <ul class="burger-nav__list list">
+                <li class="burger-nav__item">
+                  <a class="burger-nav__link link" href="./index.html"
+                    >Студия</a
+                  >
+                </li>
+                <li class="burger-nav__item">
+                  <a
+                    class="burger-nav__link burger-nav__link_current link"
+                    href="./portfolio.html"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="burger-nav__item">
+                  <a class="burger-nav__link link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+
+            <ul class="burger-contacts list">
+              <li class="burger-contacts__item">
+                <a
+                  class="burger-contacts__link_phone link"
+                  href="tel:+380961111111"
+                >
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="burger-contacts__item">
+                <a
+                  class="burger-contacts__link_mail link"
+                  href="mailto:info@devstudio.com"
+                >
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+
+            <ul class="burger-socials">
+              <li class="burger-socials__item list">
+                <a class="link burger-socials__link" href="">Instagram</a>
+              </li>
+              <li class="burger-socials__item list">
+                <a class="link burger-socials__link" href="">Twitter</a>
+              </li>
+              <li class="burger-socials__item list">
+                <a class="link burger-socials__link" href="">Facebook</a>
+              </li>
+              <li class="burger-socials__item list">
+                <a class="link burger-socials__link" href="">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </label>
       </div>
     </header>
@@ -78,7 +134,7 @@
         <div class="container">
           <h1 class="visually-hidden">Портфолио</h1>
           <!-- filter buttons -->
-          <ul class="filter__list list flex-cards">
+          <ul class="filter__list list">
             <li class="filter__item">
               <button class="button button_secondary active" type="button">
                 Все
@@ -115,7 +171,6 @@
                     class="galery__img"
                     src="./images/portfolio/img-technokryak.jpg"
                     alt="Ноутбук с открытым веб-сайтом Технокряк"
-                    width="370"
                   />
                   <div class="galery__overlay overlay-galery">
                     <p class="overlay-galery__text">
@@ -139,7 +194,6 @@
                     class="galery__img"
                     src="./images/portfolio/img-poster-new-orlean.jpg"
                     alt="Два баскетболиста из Нового Орлеана и Голден Стар борятся за мяч"
-                    width="370"
                   />
                   <div class="galery__overlay overlay-galery">
                     <p class="overlay-galery__text">
@@ -164,7 +218,6 @@
                     class="galery__img"
                     src="./images/portfolio/img-seafood.jpg"
                     alt="Логотип ресторана Seafood на фоне рыбы"
-                    width="370"
                   />
                   <div class="galery__overlay overlay-galery">
                     <p class="overlay-galery__text">
@@ -188,7 +241,6 @@
                     class="galery__img"
                     src="./images/portfolio/img-prime.jpg"
                     alt="Черные накладные наушники"
-                    width="370"
                   />
                   <div class="galery__overlay overlay-galery">
                     <p class="overlay-galery__text">
@@ -212,7 +264,6 @@
                     class="galery__img"
                     src="./images/portfolio/img-boxes.jpg"
                     alt="Две коробки Boxes, белая и коричневая"
-                    width="370"
                   />
                   <div class="galery__overlay overlay-galery">
                     <p class="overlay-galery__text">
@@ -236,7 +287,6 @@
                     class="galery__img"
                     src="./images/portfolio/img-inspiration.jpg"
                     alt="Моноблок с открым веб-сайтом Inspiration has no Borders"
-                    width="370"
                   />
                   <div class="galery__overlay overlay-galery">
                     <p class="overlay-galery__text">
@@ -260,7 +310,6 @@
                     class="galery__img"
                     src="./images/portfolio/img-limited-edition.jpg"
                     alt="Разворот журнала Limited Edition"
-                    width="370"
                   />
                   <div class="galery__overlay overlay-galery">
                     <p class="overlay-galery__text">
@@ -284,7 +333,6 @@
                     class="galery__img"
                     src="./images/portfolio/img-lab.jpg"
                     alt="Белая бирка LAB EL TAG"
-                    width="370"
                   />
                   <div class="galery__overlay overlay-galery">
                     <p class="overlay-galery__text">
@@ -308,7 +356,6 @@
                     class="galery__img"
                     src="./images/portfolio/img-growing.jpg"
                     alt="Человек работает за ноутбуком с открытым приложением Growing Business"
-                    width="370"
                   />
                   <div class="galery__overlay overlay-galery">
                     <p class="overlay-galery__text">
