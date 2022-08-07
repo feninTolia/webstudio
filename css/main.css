@@ -149,6 +149,34 @@ ul {
   }
 }
 
+.modal__close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  padding: 0;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: fill var(--timing-function);
+}
+.modal__close-btn:hover, .modal__close-btn:focus {
+  fill: var(--accent-color);
+}
+@media screen and (max-width: 479px) {
+  .modal__close-btn {
+    top: 10px;
+    right: 20px;
+    height: 40px;
+    width: 40px;
+  }
+}
+
 .callback-form {
   padding: 40px;
 }
@@ -308,6 +336,15 @@ ul {
   transform: scale(0);
 }
 
+.modal__button {
+  display: flex;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
 .button {
   display: inline-block;
   font-family: inherit;
@@ -355,35 +392,6 @@ ul {
   color: var(--main-white-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.modal__close-btn {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 30px;
-  width: 30px;
-  padding: 0;
-  background-color: transparent;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50px;
-  cursor: pointer;
-  transition: fill var(--timing-function);
-}
-.modal__close-btn:hover, .modal__close-btn:focus {
-  fill: var(--accent-color);
-}
-
-.modal__button {
-  display: flex;
-  margin-top: 30px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 55px;
-  padding-right: 55px;
 }
 
 .socials {
@@ -738,14 +746,14 @@ input:checked + label .burger-menu {
   padding-bottom: 118px;
   text-align: center;
   background-color: var(--primary-background-color);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/hero.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/hero/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/hero@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/hero/hero@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {

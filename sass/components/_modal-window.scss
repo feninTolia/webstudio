@@ -24,3 +24,35 @@
     min-height: 581px;
   }
 }
+
+.modal__close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  padding: 0;
+
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  cursor: pointer;
+
+  transition: fill var(--timing-function);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+
+  @include for-phone-responsive {
+    top: 10px;
+    right: 20px;
+    height: 40px;
+    width: 40px;
+  }
+}

@@ -56,37 +56,3 @@
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
 }
-
-.modal__close-btn {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 30px;
-  width: 30px;
-  padding: 0;
-
-  background-color: transparent;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50px;
-  cursor: pointer;
-
-  transition: fill var(--timing-function);
-
-  &:hover,
-  &:focus {
-    fill: var(--accent-color);
-  }
-}
-
-.modal__button {
-  display: flex;
-  margin-top: 30px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 55px;
-  padding-right: 55px;
-}

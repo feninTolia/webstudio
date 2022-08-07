@@ -170,3 +170,12 @@
 .policy-checkbox__link:focus:before {
   transform: scale(0);
 }
+
+.modal__button {
+  display: flex;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 55px;
+  padding-right: 55px;
+}
