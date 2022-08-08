@@ -323,6 +323,11 @@ ul {
   line-height: 1.1666666667;
   color: var(--primary-text-color);
 }
+@media screen and (max-width: 467px) {
+  .policy-checkbox__label {
+    display: inline;
+  }
+}
 @media screen and (min-width: 1200px) {
   .policy-checkbox__label {
     font-size: 14px;

@@ -109,6 +109,10 @@
   @include font(null, 12px, 14px);
   color: var(--primary-text-color);
 
+  @media screen and (max-width: 467px) {
+    display: inline;
+  }
+
   @include for-desktop-up {
     @include font(null, 14px, 24px);
   }
