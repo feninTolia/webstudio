@@ -92,13 +92,17 @@
   .policy-checkbox__input:checked + .policy-checkbox__label > & {
     opacity: 1;
   }
+
+  @media screen and (max-width: 467px) {
+    top: 20%;
+  }
 }
 
 .policy-checkbox__label {
   display: inline-flex;
   flex-wrap: wrap;
   row-gap: 5px;
-  align-items: center;
+  align-items: flex-start;
   margin: 0;
   padding-left: 13px;
 
