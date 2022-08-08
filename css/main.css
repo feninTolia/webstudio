@@ -132,8 +132,11 @@ ul {
   left: 50%;
   z-index: 9999;
   transform: translate(-50%, -50%) scale(1);
-  width: 450px;
-  min-height: 609px;
+  width: 96%;
+  height: 96%;
+  max-width: 450px;
+  max-height: 609px;
+  overflow: auto;
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -167,14 +170,6 @@ ul {
 }
 .modal__close-btn:hover, .modal__close-btn:focus {
   fill: var(--accent-color);
-}
-@media screen and (max-width: 479px) {
-  .modal__close-btn {
-    top: 10px;
-    right: 20px;
-    height: 40px;
-    width: 40px;
-  }
 }
 
 .callback-form {
