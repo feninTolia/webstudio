@@ -361,6 +361,7 @@ img {
 .policy-checkbox__link {
   position: relative;
   padding-left: 3.5px;
+  align-self: flex-end;
   border-bottom: 1px solid var(--accent-color);
   color: var(--accent-color);
   font-weight: 400;
@@ -383,7 +384,7 @@ img {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -2px;
+  bottom: -5px;
   display: block;
   width: 100%;
   height: 4px;
