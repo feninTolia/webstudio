@@ -43,6 +43,12 @@ ul {
   border: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .list {
   margin-top: 0;
   margin-bottom: 0;
@@ -316,7 +322,7 @@ ul {
   display: inline-flex;
   flex-wrap: wrap;
   row-gap: 5px;
-  align-items: flex-start;
+  align-items: center;
   margin: 0;
   padding-left: 13px;
   font-size: 12px;
