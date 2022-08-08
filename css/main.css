@@ -200,12 +200,16 @@ img {
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(1.1);
 }
+@media screen and (min-width: 480px) {
+  .modal {
+    overflow: unset;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal {
+    max-width: 528px;
     width: 528px;
     height: 581px;
-    max-width: 528px;
-    max-height: 581px;
   }
 }
 
@@ -718,6 +722,11 @@ input:checked + label .burger-menu {
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }
+@media screen and (max-width: 479px) {
+  .burger-contacts__link_phone {
+    font-size: 27px;
+  }
+}
 
 .burger-contacts__link_mail {
   font-weight: 500;
@@ -989,8 +998,6 @@ input:checked + label .burger-menu {
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding-left: 32px;
-  padding-right: 32px;
   padding-top: 16px;
   padding-bottom: 16px;
   border: 1px solid #afb1b8;
