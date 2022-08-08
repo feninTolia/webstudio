@@ -25,7 +25,10 @@
 
   @include for-desktop-up {
     width: 528px;
-    min-height: 581px;
+    height: 581px;
+
+    max-width: 528px;
+    max-height: 581px;
   }
 }
 
