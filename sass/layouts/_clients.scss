@@ -18,6 +18,17 @@
   height: 92px;
 }
 
+.clients__item:nth-child(4) {
+  @include for-phone-and-tablet {
+    .clients__link {
+      border-color: var(--accent-color);
+    }
+    .clients__icon {
+      fill: var(--accent-color);
+    }
+  }
+}
+
 .clients__link {
   display: inline-flex;
   align-items: center;

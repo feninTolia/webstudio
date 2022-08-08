@@ -674,7 +674,7 @@ input:checked + label .line.top {
   transform: rotate(-45deg);
 }
 
-.burger-menu {
+.modal-menu {
   position: fixed;
   top: 0;
   left: 0;
@@ -686,36 +686,36 @@ input:checked + label .line.top {
   background-color: #fff;
 }
 
-input:checked + label .burger-menu {
+input:checked + label .modal-menu {
   display: block;
 }
 
-.burger-nav__item:not(:last-child) {
+.modal-menu__item:not(:last-child) {
   margin-bottom: 32px;
 }
 
-.burger-nav__link {
+.modal-menu__link {
   font-weight: 500;
   font-size: 40px;
   line-height: 1.175;
   color: var(--secondary-text-color);
 }
 
-.burger-nav__link_current {
+.modal-menu__link_current {
   color: var(--accent-color);
 }
 
-.burger-contacts {
+.modal-menu__contacts {
   position: absolute;
   bottom: 134px;
   left: 40px;
 }
 
-.burger-contacts__item:not(:last-child) {
+.contacts-modal-menu__item:not(:last-child) {
   margin-bottom: 32px;
 }
 
-.burger-contacts__link_phone {
+.contacts-modal-menu_phone {
   font-weight: 500;
   font-size: 34px;
   line-height: 1.1764705882;
@@ -723,12 +723,12 @@ input:checked + label .burger-menu {
   color: var(--accent-color);
 }
 @media screen and (max-width: 479px) {
-  .burger-contacts__link_phone {
+  .contacts-modal-menu_phone {
     font-size: 27px;
   }
 }
 
-.burger-contacts__link_mail {
+.contacts-modal-menu_mail {
   font-weight: 500;
   font-size: 24px;
   line-height: 1.1666666667;

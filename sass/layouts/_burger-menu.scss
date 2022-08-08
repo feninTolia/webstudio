@@ -69,7 +69,7 @@ input:checked + label .line.top {
 }
 // ======= /burger-button======
 
-.burger-menu {
+.modal-menu {
   position: fixed;
   top: 0;
   left: 0;
@@ -83,34 +83,34 @@ input:checked + label .line.top {
   background-color: #fff;
 }
 
-input:checked + label .burger-menu {
+input:checked + label .modal-menu {
   display: block;
 }
 
-.burger-nav__item:not(:last-child) {
+.modal-menu__item:not(:last-child) {
   margin-bottom: 32px;
 }
 
-.burger-nav__link {
+.modal-menu__link {
   @include font(500, 40px, 47px);
   color: var(--secondary-text-color);
 }
 
-.burger-nav__link_current {
+.modal-menu__link_current {
   color: var(--accent-color);
 }
 
-.burger-contacts {
+.modal-menu__contacts {
   position: absolute;
   bottom: 134px;
   left: 40px;
 }
 
-.burger-contacts__item:not(:last-child) {
+.contacts-modal-menu__item:not(:last-child) {
   margin-bottom: 32px;
 }
 
-.burger-contacts__link_phone {
+.contacts-modal-menu_phone {
   @include for-phone-responsive {
     font-size: 27px;
   }
@@ -120,7 +120,7 @@ input:checked + label .burger-menu {
   color: var(--accent-color);
 }
 
-.burger-contacts__link_mail {
+.contacts-modal-menu_mail {
   @include font(500, 24px, 28px);
   letter-spacing: 0.02em;
   color: var(--primary-text-color);

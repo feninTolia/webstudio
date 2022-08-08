@@ -674,7 +674,7 @@ input:checked + label .line.top {
   transform: rotate(-45deg);
 }
 
-.burger-menu {
+.modal-menu {
   position: fixed;
   top: 0;
   left: 0;
@@ -686,36 +686,36 @@ input:checked + label .line.top {
   background-color: #fff;
 }
 
-input:checked + label .burger-menu {
+input:checked + label .modal-menu {
   display: block;
 }
 
-.burger-nav__item:not(:last-child) {
+.modal-menu__item:not(:last-child) {
   margin-bottom: 32px;
 }
 
-.burger-nav__link {
+.modal-menu__link {
   font-weight: 500;
   font-size: 40px;
   line-height: 1.175;
   color: var(--secondary-text-color);
 }
 
-.burger-nav__link_current {
+.modal-menu__link_current {
   color: var(--accent-color);
 }
 
-.burger-contacts {
+.modal-menu__contacts {
   position: absolute;
   bottom: 134px;
   left: 40px;
 }
 
-.burger-contacts__item:not(:last-child) {
+.contacts-modal-menu__item:not(:last-child) {
   margin-bottom: 32px;
 }
 
-.burger-contacts__link_phone {
+.contacts-modal-menu_phone {
   font-weight: 500;
   font-size: 34px;
   line-height: 1.1764705882;
@@ -723,12 +723,12 @@ input:checked + label .burger-menu {
   color: var(--accent-color);
 }
 @media screen and (max-width: 479px) {
-  .burger-contacts__link_phone {
+  .contacts-modal-menu_phone {
     font-size: 27px;
   }
 }
 
-.burger-contacts__link_mail {
+.contacts-modal-menu_mail {
   font-weight: 500;
   font-size: 24px;
   line-height: 1.1666666667;
@@ -771,22 +771,40 @@ input:checked + label .burger-menu {
   padding-bottom: 118px;
   text-align: center;
   background-color: var(--primary-background-color);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-mobile@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-tablet.jpg);
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-tablet@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-desktop.jpg);
+    background-repeat: no-repeat;
     max-width: 1920px;
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-desktop@2x.jpg);
   }
 }
 
@@ -990,6 +1008,15 @@ input:checked + label .burger-menu {
 @media screen and (min-width: 1200px) {
   .clients__item {
     width: calc((100% - 150px) / 6);
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .clients__item:nth-child(4) .clients__link {
+    border-color: var(--accent-color);
+  }
+  .clients__item:nth-child(4) .clients__icon {
+    fill: var(--accent-color);
   }
 }
 
