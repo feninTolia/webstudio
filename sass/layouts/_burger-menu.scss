@@ -56,17 +56,18 @@
   transition: transform var(--timing-function);
 }
 
-input:checked + label .line.bottom {
+.burger-checkbox:checked + label .line.bottom {
   transform: rotate(45deg);
 }
 
-input:checked + label .line.center {
+.burger-checkbox:checked + label .line.center {
   transform: scale(0);
 }
 
-input:checked + label .line.top {
+.burger-checkbox:checked + label .line.top {
   transform: rotate(-45deg);
 }
+
 // ======= /burger-button======
 
 .modal-menu {

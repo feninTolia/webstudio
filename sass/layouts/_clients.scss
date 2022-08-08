@@ -6,6 +6,10 @@
 }
 
 .clients__item {
+  @include for-phone-responsive {
+    width: 250px;
+  }
+
   width: calc((100% - 30px) / 2);
 
   @include for-tablet-only {

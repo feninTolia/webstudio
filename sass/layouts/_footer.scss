@@ -98,8 +98,9 @@
   }
 
   @include for-phone-and-tablet {
-    width: 100%;
-    min-width: 300px;
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 20px;
   }
 

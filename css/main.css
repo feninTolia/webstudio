@@ -662,15 +662,15 @@ img {
   transition: transform var(--timing-function);
 }
 
-input:checked + label .line.bottom {
+.burger-checkbox:checked + label .line.bottom {
   transform: rotate(45deg);
 }
 
-input:checked + label .line.center {
+.burger-checkbox:checked + label .line.center {
   transform: scale(0);
 }
 
-input:checked + label .line.top {
+.burger-checkbox:checked + label .line.top {
   transform: rotate(-45deg);
 }
 
@@ -1000,6 +1000,11 @@ input:checked + label .modal-menu {
   width: calc((100% - 30px) / 2);
   height: 92px;
 }
+@media screen and (max-width: 479px) {
+  .clients__item {
+    width: 250px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients__item {
     width: calc((100% - 60px) / 3);
@@ -1142,8 +1147,9 @@ input:checked + label .modal-menu {
 }
 @media screen and (max-width: 1199px) {
   .subscribe__input {
-    width: 100%;
-    min-width: 300px;
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 20px;
   }
 }
