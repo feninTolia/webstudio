@@ -108,6 +108,55 @@ ul {
   }
 }
 
+.button {
+  display: inline-block;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--secondary-text-color);
+  background-color: var(--main-white-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button_primary {
+  padding: 10px 32px;
+  color: var(--main-white-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: box-shadow var(--timing-function), background-color var(--timing-function);
+}
+.button_primary:hover, .button_primary:focus {
+  background-color: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.button_secondary {
+  padding: 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  background-color: var(--secondary-background-color);
+  transition: box-shadow var(--timing-function), background-color var(--timing-function), color var(--timing-function);
+}
+.button_secondary:hover, .button_secondary:focus {
+  color: var(--main-white-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.button_secondary.active {
+  color: var(--main-white-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -345,55 +394,6 @@ ul {
   margin-left: auto;
   padding-left: 55px;
   padding-right: 55px;
-}
-
-.button {
-  display: inline-block;
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: var(--secondary-text-color);
-  background-color: var(--main-white-color);
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.button_primary {
-  padding: 10px 32px;
-  color: var(--main-white-color);
-  background-color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition: box-shadow var(--timing-function), background-color var(--timing-function);
-}
-.button_primary:hover, .button_primary:focus {
-  background-color: #188ce8;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.button_secondary {
-  padding: 6px 22px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.625;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
-  background-color: var(--secondary-background-color);
-  transition: box-shadow var(--timing-function), background-color var(--timing-function), color var(--timing-function);
-}
-.button_secondary:hover, .button_secondary:focus {
-  color: var(--main-white-color);
-  background-color: var(--accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-.button_secondary.active {
-  color: var(--main-white-color);
-  background-color: var(--accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .socials {
