@@ -1,7 +1,7 @@
 :root {
   --primary-text-color: #757575;
   --secondary-text-color: #212121;
-  --accent-color: #2196f3;
+  --accent-color: #599667;
   --main-white-color: #ffffff;
   --primary-background-color: #2f303a;
   --secondary-background-color: #f5f4fa;
@@ -137,7 +137,7 @@ img {
   transition: box-shadow var(--timing-function), background-color var(--timing-function);
 }
 .button_primary:hover, .button_primary:focus {
-  background-color: #188ce8;
+  background-color: #63a472;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -154,12 +154,12 @@ img {
 }
 .button_secondary:hover, .button_secondary:focus {
   color: var(--main-white-color);
-  background-color: var(--accent-color);
+  background-color: #63a472;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .button_secondary.active {
   color: var(--main-white-color);
-  background-color: var(--accent-color);
+  background-color: #63a472;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
@@ -272,7 +272,7 @@ img {
   transition: fill var(--timing-function);
 }
 .callback-form__input:focus + .callback-form__icon {
-  fill: #2196f3;
+  fill: var(--accent-color);
 }
 
 .callback-form__input {
@@ -610,7 +610,7 @@ img {
   transition: fill var(--timing-function);
 }
 .contacts__link:hover .contacts__icon, .contacts__link:focus .contacts__icon {
-  fill: #2196f3;
+  fill: var(--accent-color);
 }
 
 .burger-menu-button {
@@ -771,40 +771,22 @@ input:checked + label .modal-menu {
   padding-bottom: 118px;
   text-align: center;
   background-color: var(--primary-background-color);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-mobile.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-desktop.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-mobile@2x.jpg);
-  }
-}
-@media screen and (min-width: 768px) {
-  .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-tablet.jpg);
-    background-repeat: no-repeat;
-  }
-}
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-tablet@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-desktop@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-desktop.jpg);
-    background-repeat: no-repeat;
     max-width: 1920px;
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
-  }
-}
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-desktop@2x.jpg);
   }
 }
 

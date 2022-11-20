@@ -62,7 +62,7 @@
   color: var(--accent-color);
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     right: 0;
     bottom: -1px;
@@ -126,6 +126,6 @@
 
   .contacts__link:hover &,
   .contacts__link:focus & {
-    fill: #2196f3;
+    fill: var(--accent-color);
   }
 }

@@ -39,7 +39,7 @@
   transition: fill var(--timing-function);
 
   .callback-form__input:focus + & {
-    fill: #2196f3;
+    fill: var(--accent-color);
   }
 }
 
@@ -119,7 +119,7 @@
 }
 
 .policy-checkbox__label::before {
-  content: "";
+  content: '';
   display: inline-block;
   width: 16px;
   height: 15px;
@@ -162,7 +162,7 @@
 }
 
 .policy-checkbox__link:before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: -4px;

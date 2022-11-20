@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/portfolio.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container container-flex">
+        <!-- logo and navigation-->
+        <nav class="nav">
+          <a class="logo" href="./index.html"
+            ><span class="logo_accent">Web</span>Studio</a
+          >
+
+          <ul class="nav__list list">
+            <li class="nav__item">
+              <a class="nav__link" href="./index.html">Студия</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link_current" href="./contacts.html"
+                >Контакты</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <!-- contacts -->
+        <ul class="contacts list">
+          <li class="contacts__item">
+            <a class="contacts__link" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon" width="16" height="12">
+                <use href="./images/symbol-defs.svg#envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:+380961111111"
+              ><svg class="contacts__icon" width="10" height="16">
+                <use href="./images/symbol-defs.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+
+        <!-- ========Burger Menu=========== -->
+        <input class="visually-hidden" type="checkbox" id="burger-checkbox" />
+        <label for="burger-checkbox">
+          <div class="burger-menu-button">
+            <span class="line top"> </span>
+            <span class="line center"> </span>
+            <span class="line bottom"> </span>
+          </div>
+
+          <div class="modal-menu">
+            <nav>
+              <ul class="modal-menu__list list">
+                <li class="modal-menu__item">
+                  <a class="modal-menu__link link" href="./index.html"
+                    >Студия</a
+                  >
+                </li>
+                <li class="modal-menu__item">
+                  <a class="modal-menu__link link" href="./portfolio.html"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="modal-menu__item">
+                  <a
+                    class="modal-menu__link modal-menu__link_current link"
+                    href="./contacts.html"
+                    >Контакты</a
+                  >
+                </li>
+              </ul>
+            </nav>
+
+            <ul class="modal-menu__contacts contacts-modal-menu list">
+              <li class="contacts-modal-menu__item">
+                <a
+                  class="contacts-modal-menu_phone link"
+                  href="tel:+380961111111"
+                >
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="contacts-modal-menu__item">
+                <a
+                  class="contacts-modal-menu_mail link"
+                  href="mailto:info@devstudio.com"
+                >
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+
+            <ul class="burger-socials">
+              <li class="burger-socials__item list">
+                <a class="link burger-socials__link" href="">Instagram</a>
+              </li>
+              <li class="burger-socials__item list">
+                <a class="link burger-socials__link" href="">Twitter</a>
+              </li>
+              <li class="burger-socials__item list">
+                <a class="link burger-socials__link" href="">Facebook</a>
+              </li>
+              <li class="burger-socials__item list">
+                <a class="link burger-socials__link" href="">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </label>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <iframe
+          width="100%"
+          height="750"
+          style="border: 0"
+          loading="lazy"
+          allowfullscreen
+          src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJsXDt-BHP1EAR4KZbg6r6NcM&key=AIzaSyBSNiiQbBCcERC7D0nKm4yE83VV8kNi0kY"
+        ></iframe>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container container-flex container-footer">
+        <!-- logo-footer -->
+        <div class="address-wrapper">
+          <a class="logo footer__logo" href="/"
+            ><span class="logo_accent">Web</span>Studio</a
+          >
+
+          <!-- contact information -->
+          <address class="address">
+            <ul class="address__list list">
+              <li class="address__item">
+                <a
+                  class="address__link address__link_geo"
+                  href="https://goo.gl/maps/iMKgxrzqZL7RTVhf6"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="address__item">
+                <a
+                  class="address__link address__link_cont"
+                  href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="address__item">
+                <a
+                  class="address__link address__link_cont"
+                  href="tel:+380991111111"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <!-- join -->
+        <div class="join">
+          <b class="join__title">ПРИСОЕДИНЯЙТЕСЬ</b>
+          <ul class="socials footer__socials list">
+            <li class="socials__item">
+              <a class="socials__link socials__link_footer" href="#">
+                <svg class="socials__icon socials__icon_footer">
+                  <use href="./images/symbol-defs.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link_footer" href="#">
+                <svg class="socials__icon socials__icon_footer">
+                  <use href="./images/symbol-defs.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link_footer" href="#">
+                <svg class="socials__icon socials__icon_footer">
+                  <use href="./images/symbol-defs.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link_footer" href="#">
+                <svg class="socials__icon socials__icon_footer">
+                  <use href="./images/symbol-defs.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- subscribe -->
+        <form class="subscribe">
+          <b class="join__title subscribe-title">Подпишитесь на рассылку</b>
+          <label class="visually-hidden" for="subscribe_mail">E-mail</label>
+          <input
+            class="subscribe__input"
+            name="subscribe_mail"
+            id="subscribe_mail"
+            type="email"
+            required
+            placeholder="E-mail"
+          />
+          <button class="button button_primary subscribe-button" type="submit">
+            Подписаться
+            <svg class="subscribe-button__icon" width="24" height="24">
+              <use href="./images/symbol-defs.svg#plane"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>
