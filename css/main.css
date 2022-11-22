@@ -153,6 +153,7 @@ img {
   transition: box-shadow var(--timing-function), background-color var(--timing-function), color var(--timing-function);
 }
 .button_secondary:hover, .button_secondary:focus {
+  opacity: 0.9 !important;
   color: var(--main-white-color);
   background-color: #63a472;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -1113,8 +1114,7 @@ input:checked + label .modal-menu {
 }
 
 .subscribe__input {
-  width: 358px;
-  height: 50px;
+  width: 300px;
   padding: 15px;
   margin-right: 12px;
   color: var(--main-white-color);

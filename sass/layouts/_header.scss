@@ -12,7 +12,6 @@
   @include for-tablet-up {
     display: flex;
     align-items: center;
-    // justify-content: space-between;
   }
 }
 
@@ -34,7 +33,7 @@
     margin-left: 93px;
   }
 }
-//
+
 .nav__item:not(:last-child) {
   margin-right: 50px;
 }
@@ -73,7 +72,6 @@
     border-radius: 2px;
   }
 }
-//
 
 .contacts {
   display: none;
